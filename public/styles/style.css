@@ -1,0 +1,163 @@
+body{
+    font-family: sans-serif;
+  }
+  
+  a {
+    color: black;
+    text-decoration: none;
+  }
+  
+  button, input:focus{
+    outline:0;
+  }
+  
+  header{
+    width: 1000px;
+    /*background-color: green;   */
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  header h1 {
+    font-size: 5em;
+    font-family: verdana, sans-serif;
+    text-align: center;
+    text-shadow: 2px 2px 2px gray;
+  }
+  
+  #main{
+    width: 1000px;
+    /*background-color: gray;*/
+    margin-left: auto;
+    margin-right: auto;
+  
+  }
+  
+  form{
+    width: 1000px;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid black;
+    box-shadow: 2px 2px 2px black;
+    /*background-color: #F5EDD0;*/
+    background-color: #E2E6E8;
+  }
+  
+  #search-box{
+    font-size: 1.2em;
+    /*border: 1px solid black;*/
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 5%;
+    border-radius: 20px;
+    -webkit-box-shadow: inset 1px 1px 1px black;
+    -moz-box-shadow: inset 1px 1px 1px black;
+    box-shadow: inset 1px 1px 1px black;
+    text-align: center;
+  }
+  
+  #search-box:hover{
+    /*visibility: hidden;*/
+    border: 2px solid black;
+  }
+  
+  #search-box:focus{
+    border: 2px solid black;
+  }
+  
+  /* add magnifying glass to search bar */
+  .search { position: relative; }
+  .search input { /*text-indent: 20px;*/}
+  .search .fa-search {
+    position: absolute;
+    top: 56px;
+    left: 260px;
+    font-size: 15px;
+    z-index: 10;
+    opacity: 0.5;
+  }
+  
+  button{
+    display: block;
+    margin-top: 20px;
+    height: 50px;
+    border-radius: 20px;
+    text-align: center;
+    background-color: #84A0BC;
+    color: white;
+    font-size: 1.5em;
+  }
+  
+  button:hover{
+    opacity: 0.8;
+  }
+  
+  #random{
+    text-align: center;
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+  }
+  
+  #articles{
+    margin-top: 10px;
+    width: 1000px;;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .article{
+    /*background-color: #E6E4E4;*/
+    line-height: 2em;
+    background-color: #E2E6E8;
+    border: 1px solid black;
+    box-shadow: 2px 2px 2px black;
+    padding: 5px;
+    margin-bottom: 5px;
+    transition: all 0.5s ease;
+  }
+  
+  .article h3{
+    font-family: "Linux Libertine",Georgia,Times,serif
+  }
+  
+  .article:hover{
+    border-left: 5px solid #84A0BC;
+    transform: scale3d(1.03, 1.0, 2.0);
+    box-shadow: 3px 3px 5px black;
+  }
+  
+  footer{
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .hr{
+    width: 800px;
+    height: 1px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: black;
+  }
+  /*half screen (full)*/
+  @media screen and (max-width: 1060px){
+    h1{
+      background-color: yellow;
+    }
+  }
+  /*tablet */
+  @media screen and (max-width: 800px){
+    h1{
+      background-color: gray;
+    }
+  }
+  
+  /*mobile phone */
+  @media screen and (max-width: 400px){
+    h1{
+      background-color: pink;
+    }
+  }
